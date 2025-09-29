@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Academia SportFit</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="script.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+
+</head>
+<body>
+  <header>
+  <h1 class="logo"><span class="blue">Sport</span><span class="yellow">Fit</span></h1>
+  <nav>
+    <a href="#sobre">Sobre</a>
+    <a href="#planos">Planos</a>
+    <a href="#contato">Contato</a>
+  </nav>
+</header>
+
+<section id="sobre">
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="bloco">
+    <h2>Sobre Nós</h2>
+        <p>Na <strong>SportFit</strong>, acreditamos que o treino vai além da estética: ele é saúde, bem-estar e qualidade de vida. Fundada em 2015, nossa missão é transformar a rotina de cada aluno com treinos personalizados, tecnologia moderna e profissionais capacitados.</p>
+        <p>Nosso espaço oferece ambientes climatizados, equipamentos de ponta e uma equipe pronta para te ajudar a alcançar seus objetivos.</p>
+      </div>
+      <div class="bloco">
+        <h3>Nossos Valores</h3>
+        <ul>
+          <li>✔ Saúde e bem-estar em primeiro lugar</li>
+          <li>✔ Treinos personalizados</li>
+          <li>✔ Ambiente acolhedor e motivador</li>
+          <li>✔ Equipe altamente qualificada</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+</section>
+
+<section class="atividades">
+  <h2>Descubra nossas atividades</h2>
+  <div class="lista-atividades">
+    <div class="atividade" data-desc="Treinos de defesa pessoal e artes marciais para todas as idades.">
+      Artes Marciais
+    </div>
+    <div class="atividade" data-desc="Aulas intensas de bike indoor para melhorar o condicionamento físico.">
+      Bike Indoor
+    </div>
+    <div class="atividade" data-desc="Treinos funcionais que trabalham o corpo todo com movimentos naturais.">
+      Funcional
+    </div>
+    <div class="atividade" data-desc="Aulas animadas de dança para gastar energia e se divertir.">
+      Hit Dance
+    </div>
+    <div class="atividade" data-desc="Treinos com mini-camas elásticas para fortalecer e queimar calorias.">
+      Jump
+    </div>
+    <div class="atividade" data-desc="Treinos localizados para fortalecer regiões específicas do corpo.">
+      Localizada
+    </div>
+    <div class="atividade" data-desc="Musculação completa com equipamentos modernos e seguros.">
+      Musculação
+    </div>
+    <div class="atividade" data-desc="Aulas de pilates para melhorar a postura, equilíbrio e flexibilidade.">
+      Pilates
+    </div>
+  </div>
+
+  <!-- Caixa de descrição -->
+  <div id="descricaoAtividade" class="descricao">
+    <p id="textoDescricao"></p>
+    <button id="fecharDesc">Fechar</button>
+  </div>
+</section>
+
+
+
+<section id="planos" class="setor setor2">
+  <div class="overlay">
+  <h2>Nossos Planos</h2>
+  <div class="planos-container">
+    <div class="plano">
+      <h3>Básico</h3>
+      <p>R$ 99/mês</p>
+    </div>
+    <div class="plano destaque">
+      <h3>Premium</h3>
+      <p>R$ 149/mês</p>
+    </div>
+    <div class="plano">
+      <h3>VIP</h3>
+      <p>R$ 199/mês</p>
+    </div>
+  </div>
+  <button id="matricula">Matricule-se Agora</button>
+</section>
+
+<section id="mapa">
+  <h2>Onde Estamos</h2>
+  <div id="map"></div>
+  <p>Rua Benjamim Guimarães, 315 — Democrata, Juiz de Fora, MG</p>
+</section>
+
+<section id="contato">
+  <h2>Fale Conosco</h2>
+  <p>Email: contato@sportfit.com | Tel: (32) 99915-7755</p>
+  <p>WhatsApp: <a href="https://wa.me/5532999157755" target="_blank">Clique aqui</a></p>
+  <p>Funcionamento: Seg a Sex — 6h às 22h | Sáb — 8h às 14h</p>
+</section>
+
