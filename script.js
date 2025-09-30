@@ -40,5 +40,34 @@ document.addEventListener("DOMContentLoaded", () => {
     descricaoBox.style.display = "none";
 
 
+    
 });
+let slides = document.querySelectorAll(".slide");
+let index = 0;
+
+function mostrarSlide(i) {
+  slides.forEach(slide => slide.classList.remove("ativo"));
+  slides[i].classList.add("ativo");
+}
+
+function nextSlide() {
+  index = (index + 1) % slides.length;
+  mostrarSlide(index);
+}
+
+function prevSlide() {
+  index = (index - 1 + slides.length) % slides.length;
+  mostrarSlide(index);
+}
+
+// Botões
+document.querySelector(".next").addEventListener("click", () => {
+  nextSlide();
+});
+
+document.querySelector(".prev").addEventListener("click", () => {
+  prevSlide();
+});
+
+
 });
